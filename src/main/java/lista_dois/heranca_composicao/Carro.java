@@ -11,12 +11,7 @@ public class Carro {
 
     public static void main(String[] args) {
         var carro = new Carro().cadastrarCarro();
-        System.out.println("******** Cadastre seu Motor ********");
-        System.out.println(" Digite o tipo: ");
-        var tipo = new Scanner(System.in).next();
-        System.out.println(" Digite a potencia: ");
-        var potencia = new Scanner(System.in).nextInt();
-        var motor = new Motor(tipo, potencia);
+        var motor = new Carro().cadastrarMotor();
         System.out.println("------------------");
         carro.acelerar();
         carro.frear();
@@ -37,6 +32,14 @@ public class Carro {
         return c;
     }
 
+    public Motor cadastrarMotor(){
+        System.out.println("******** Cadastre seu Motor ********");
+        System.out.println(" Digite o tipo: ");
+        var tipo = new Scanner(System.in).next();
+        System.out.println(" Digite a potencia: ");
+        var potencia = new Scanner(System.in).nextInt();
+        return new Motor(tipo, potencia);
+    }
 
     private void acelerar(){
         System.out.println("O carro está acelerando");
