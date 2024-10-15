@@ -9,10 +9,6 @@ public class Motor {
         this.potencia = potencia;
     }
 
-    public void exibirDadosMotor(Motor motor){
-        System.out.println(motor.toString());
-    }
-
     @Override
     public String toString() {
         return "Motor{" +

@@ -6,12 +6,4 @@ public class Moto extends Veiculo {
         System.out.println("A moto está buzinando");
     }
 
-    public static void main(String[] args) {
-        Moto moto = new Moto();
-        moto.marca = "Honda";
-        moto.modelo = "CB 500";
-        moto.ligar();
-        moto.buzinar();
-    }
-
 }
